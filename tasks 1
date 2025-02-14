@@ -1,0 +1,24 @@
+class Car:
+    def __init__(self, brand, model, year):
+        self.brand = brand
+        self.model = model
+        self.year = year
+
+    def display_info(self):
+        print(f"Brand: {self.brand}")
+        print(f"Model: {self.model}")
+        print(f"Year: {self.year}")
+        print("-" * 20)  # Separator for better readability
+
+
+# Create two car objects
+car1 = Car("Toyota", "Camry", 2022)
+car2 = Car("Honda", "Civic", 2020)
+
+# Display the details of each car
+car1.display_info()
+car2.display_info()
+
+
+# Example of how to access attributes directly (though usually display_info is preferred)
+print(f"Car 1's brand: {car1.brand}")  # Output: Car 1's brand: Toyota
